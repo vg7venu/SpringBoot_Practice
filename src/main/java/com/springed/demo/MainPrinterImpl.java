@@ -15,6 +15,7 @@ public class MainPrinterImpl {
     private MainPrinter mainPrinter;
 
     public void execute(){
+        System.out.println("\n"+mainPrinter);
         mainPrinter.print("Hai, ");
     }
 }
