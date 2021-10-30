@@ -11,8 +11,13 @@ public class DemoApplication {
 		// SpringApplication.run(DemoApplication.class, args);
 
 		ApplicationContext applicationContext = SpringApplication.run(DemoApplication.class, args);
-		MainPrinter printingJob = applicationContext.getBean(MainPrinter.class);
-		System.out.print(printingJob);
+		MainPrinterImpl printingJob = applicationContext.getBean(MainPrinterImpl.class);
+		printingJob.execute();
+		System.out.println(printingJob);
+
+		MainPrinterImpl printingJob2 = applicationContext.getBean(MainPrinterImpl.class);
+		printingJob.execute();
+		System.out.println(printingJob2);
 	}
 
 }
