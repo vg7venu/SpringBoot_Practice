@@ -2,23 +2,30 @@ package com.springed.demopackage.cdi;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.Configuration;
 
-@SpringBootApplication
+// @SpringBootApplication
+@Configuration
+@ComponentScan
 public class CDISpringAnnotationsApplication {
     private static Logger logger = LoggerFactory.getLogger(CDISpringAnnotationsApplication.class);
 
     public static void main(String[] args) {
 
-        ApplicationContext applicationContext = SpringApplication.run(CDISpringAnnotationsApplication.class, args);
+        try (AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(
+                CDISpringAnnotationsApplication.class)) {
 
-        CDIImp test1 = applicationContext.getBean(CDIImp.class);
+            // ApplicationContext applicationContext =
+            // SpringApplication.run(CDISpringAnnotationsApplication.class, args);
 
-        logger.info("\n\n\n********This is the CDIImp class{}", test1);
+            CDIImp test1 = applicationContext.getBean(CDIImp.class);
 
-        test1.getCdiDao().checking();
+            logger.info("\n\n\n********This is the CDIImp class{}", test1);
+
+            test1.getCdiDao().checking();
+        }
     }
 
 }
