@@ -1,4 +1,4 @@
-package com.springed.demo.basic;
+package com.springed.demopackage.basic;
 
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Qualifier("epson")
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class EpsonPrinter implements MainPrinter {
-    public void print(String content){
-        System.out.println(content+"This content is printed by EpsonPrinter");
+    public void print(String content) {
+        System.out.println(content + "This content is printed by EpsonPrinter");
     }
 }

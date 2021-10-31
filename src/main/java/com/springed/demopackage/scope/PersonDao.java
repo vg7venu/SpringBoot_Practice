@@ -1,4 +1,4 @@
-package com.springed.demo.scope;
+package com.springed.demopackage.scope;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

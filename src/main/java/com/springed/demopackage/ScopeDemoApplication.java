@@ -1,6 +1,6 @@
-package com.springed.demo;
+package com.springed.demopackage;
 
-import com.springed.demo.scope.PersonDao;
+import com.springed.demopackage.scope.PersonDao;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

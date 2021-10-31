@@ -1,6 +1,6 @@
-package com.springed.demo;
+package com.springed.demopackage;
 
-import com.springed.demo.basic.MainPrinterImpl;
+import com.springed.demopackage.basic.MainPrinterImpl;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
