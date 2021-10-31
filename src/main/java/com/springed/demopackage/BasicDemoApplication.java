@@ -12,12 +12,12 @@ public class BasicDemoApplication {
 	public static void main(String[] args) {
 		ApplicationContext applicationContext = SpringApplication.run(BasicDemoApplication.class, args);
 		MainPrinterImpl printingJob = applicationContext.getBean(MainPrinterImpl.class);
-		printingJob.execute();
-		System.out.println(printingJob);
+		// printingJob.execute();
+		// System.out.println(printingJob);
 
 		MainPrinterImpl printingJob2 = applicationContext.getBean(MainPrinterImpl.class);
-		printingJob.execute();
-		System.out.println(printingJob2);
+		// printingJob.execute();
+		// System.out.println(printingJob2);
 	}
 
 }
