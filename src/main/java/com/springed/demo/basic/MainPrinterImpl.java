@@ -1,4 +1,4 @@
-package com.springed.demo;
+package com.springed.demo.basic;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -9,13 +9,13 @@ import org.springframework.context.annotation.Scope;
 @Component
 @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class MainPrinterImpl {
-    
+
     @Autowired
     @Qualifier("epson")
     private MainPrinter mainPrinter;
 
-    public void execute(){
-        System.out.println("\n"+mainPrinter);
+    public void execute() {
+        System.out.println("\n" + mainPrinter);
         mainPrinter.print("Hai, ");
     }
 }

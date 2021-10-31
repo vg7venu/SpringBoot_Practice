@@ -1,4 +1,4 @@
-package com.springed.demo;
+package com.springed.demo.basic;
 
 import org.springframework.stereotype.Component;
 
