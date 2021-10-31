@@ -1,10 +1,13 @@
 package com.springed.demopackage.cdi;
 
+import javax.inject.Named;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
-@Component
+// @Component
+@Named
 public class CDIDao {
     private Logger logger = LoggerFactory.getLogger(this.getClass());
 
