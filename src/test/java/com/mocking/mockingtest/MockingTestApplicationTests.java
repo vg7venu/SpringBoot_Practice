@@ -3,7 +3,7 @@ package com.mocking.mockingtest;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+@SpringBootTest(classes = MockingTestApplication.class)
 class MockingTestApplicationTests {
 
 	@Test
