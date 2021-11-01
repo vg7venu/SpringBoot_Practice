@@ -7,12 +7,12 @@ package com.springed.demopackage.basic;
 // import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
-import org.springframework.stereotype.Component;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Service;
 
-@Component
-@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+@Service
+@Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
 public class MainPrinterImpl {
 
     // private Logger logger = LoggerFactory.getLogger(this.getClass());
