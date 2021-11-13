@@ -19,4 +19,16 @@ public class CDIImp {
         this.cdiDao = cdiDao;
     }
 
+    public int findGreatest() {
+        // int greatest = Integer.MAX_VALUE;
+        // int data = 10;
+        int data = cdiDao.getData();
+        // for (int value : data) {
+        // if (value > greatest) {
+        // greatest = value;
+        // }
+        // }
+        return data;
+    }
+
 }

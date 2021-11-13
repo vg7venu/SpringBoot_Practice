@@ -17,4 +17,8 @@ public class CDIDao {
     public void checking() {
         System.out.println("\n\nChecking funtion \n\n");
     }
+
+    public int getData() {
+        return 10;
+    }
 }

@@ -49,18 +49,7 @@
 			<scope>test</scope>
 		</dependency>
 
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.0.0</version>
-			<scope>test</scope>
-		</dependency>
 
-		<!-- <dependency>
-			<groupId>io.projectreactor</groupId>
-			<artifactId>reactor-test</artifactId>
-			<scope>test</scope>
-		</dependency> -->
 		<dependency>
 			<groupId>com.guicedee.services</groupId>
 			<artifactId>sl4j</artifactId>
