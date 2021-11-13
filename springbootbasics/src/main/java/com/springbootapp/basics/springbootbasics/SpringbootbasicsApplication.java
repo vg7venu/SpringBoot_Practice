@@ -10,9 +10,9 @@ public class SpringbootbasicsApplication {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext appContext = SpringApplication.run(SpringbootbasicsApplication.class, args);
-		for (String name : appContext.getBeanDefinitionNames()) {
-			System.out.println(name);
-		}
+		// for (String name : appContext.getBeanDefinitionNames()) {
+		// System.out.println(name);
+		// }
 
 	}
 
