@@ -21,9 +21,10 @@ public class MainPrinterImpl {
     @Qualifier("epson")
     private MainPrinter mainPrinter;
 
-    public void execute() {
+    public int execute() {
         System.out.println("\n" + mainPrinter);
         mainPrinter.print("Hai, ");
+        return 2;
     }
 
     // @PostConstruct
